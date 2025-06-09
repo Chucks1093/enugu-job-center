@@ -1,0 +1,32 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+	img {
+		display: block;
+	}
+}
+
+.feature-item-position {
+	transform: translateX(50%) translateY(100%);
+}
+
+.auth-layout {
+	background-color: #ffffff;
+	/* opacity: 0.8; */
+	/* background-image: radial-gradient(#a1b19f 0.5px, transparent 0.5px),
+		radial-gradient(#a1b19f 0.5px, #ffffff 0.5px) ; */
+	background-image: url("/images/auth-bg-4.jpg");
+	/* filter: grayscale(100%); */
+
+	background-size: cover;
+	background-position: top;
+	background-repeat: no-repeat;
+	/* background-size: 20px 20px;
+	background-position: 0 0, 10px 10px; */
+}
+
+.spacing {
+	line-height: 3.2rem;
+}
