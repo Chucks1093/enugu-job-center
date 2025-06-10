@@ -30,3 +30,23 @@
 .spacing {
 	line-height: 3.2rem;
 }
+
+/* For icons */
+.icon-white {
+	filter: brightness(0) invert(1);
+}
+
+/* For photos with better quality */
+.photo-white {
+	filter: grayscale(100%) contrast(150%) brightness(250%);
+}
+
+/* For logos */
+.logo-white {
+	filter: grayscale(100%) contrast(200%) brightness(300%) saturate(0%)
+		invert(100%);
+}
+
+html {
+	scroll-behavior: smooth;
+}

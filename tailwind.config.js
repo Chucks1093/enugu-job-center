@@ -16,7 +16,7 @@ export default {
 			},
 			colors: {
 				app: {
-					primary: "#03255D",
+					primary: "#0A2D65FF",
 					secondary: "#F1D353",
 				},
 				background: "hsl(var(--background))",

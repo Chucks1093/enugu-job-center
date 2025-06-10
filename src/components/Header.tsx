@@ -1,6 +1,7 @@
 import { MousePointer2, Menu, X } from "lucide-react";
 import { Link } from "react-router";
 import { useState } from "react";
+import { JOB_LINK } from "@/lib/constants";
 
 function Header() {
 	const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -19,14 +20,14 @@ function Header() {
 				{/* Logo Section */}
 				<div className='flex items-center justify-between gap-2 md:gap-3'>
 					<img
-						src='/logo-blue.png'
+						src='/icons/enugu-job-logo.png'
 						alt='logo'
-						className='h-[6vh] sm:h-[7vh] md:h-[8vh]'
+						className='w-[5rem] md:w-[5.7rem]'
 					/>
 					<img
-						src='/icons/gov.png'
+						src='/icons/giz.png'
 						alt='logo'
-						className='h-[5vh] sm:h-[6vh] md:h-[7vh]'
+						className='w-[5rem] md:w-[5.7rem]'
 					/>
 				</div>
 
@@ -38,7 +39,7 @@ function Header() {
 						Home
 					</a>
 					<a
-						href='#services'
+						href='#features'
 						className='hover:text-app-primary transition-colors'>
 						Services
 					</a>
@@ -116,19 +117,20 @@ function Header() {
 					</a>
 
 					{/* Mobile Apply Button */}
-					<Link
-						to='/loan'
+					<a
+						href={JOB_LINK}
+						target='_blank'
 						onClick={closeMobileMenu}
 						className='sm:hidden pt-4'>
 						<button className='w-full flex items-center justify-center bg-app-primary text-zinc-100 text-sm p-3 rounded-lg gap-3 font-semibold font-montserrat'>
-							Apply for Loan
+							Apply Now
 							<MousePointer2
 								className='rotate-90 w-4 h-4'
 								fill='white'
 								stroke='white'
 							/>
 						</button>
-					</Link>
+					</a>
 				</nav>
 			</div>
 		</>

@@ -6,19 +6,37 @@ const Footer: React.FC = () => {
 		{
 			title: "SOCIALS",
 			links: [
-				{ label: "LinkedIn", url: "#" },
-				{ label: "Instagram", url: "#" },
-				{ label: "LinkedIn", url: "#" },
-				{ label: "Whatsapp", url: "#" },
+				{
+					label: "LinkedIn",
+					url: "https://www.linkedin.com/company/enugu-state-sme-agency",
+				},
+				{ label: "Instagram", url: "https://instagram.com/enugusmeagency" },
+				{
+					label: "LinkedIn",
+					url: "https://www.linkedin.com/company/enugu-state-sme-agency",
+				},
+				{
+					label: "Whatsapp",
+					url: "https://chat.whatsapp.com/BfR2fEkCFzsD4HiULT9fFt",
+				},
 			],
 		},
 		{
 			title: "PROGRAMS",
 			links: [
-				{ label: "Blogs", url: "#" },
-				{ label: "Enugu Loans", url: "#" },
-				{ label: "Business Grants", url: "#" },
-				{ label: "Enugu Learning", url: "#" },
+				{ label: "Blogs", url: "https://www.enugusme.en.gov.ng/blog/" },
+				{
+					label: "Enugu Loans",
+					url: "https://www.enugusme.en.gov.ng/programs/enugu-loans/",
+				},
+				{
+					label: "Business Grants",
+					url: "https://www.enugusme.en.gov.ng/programs/enugu-business-grants",
+				},
+				{
+					label: "Enugu Learning",
+					url: "https://www.enugusme.en.gov.ng/programs/enugu-learning/",
+				},
 			],
 		},
 		{
@@ -78,6 +96,7 @@ const Footer: React.FC = () => {
 										transition={{ duration: 0.2 }}>
 										<a
 											href={link.url}
+											target='_blank'
 											className='text-white hover:text-gray-300 transition-colors duration-200 text-sm font-light'>
 											{link.label}
 										</a>
@@ -95,18 +114,9 @@ const Footer: React.FC = () => {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.6, delay: 0.8 }}>
 					<div className='flex flex-col md:flex-row justify-between items-center text-sm text-gray-300'>
-						<p>&copy; 2024 Onboard. All rights reserved.</p>
+						<p>&copy; 2024 Onboard. </p>
 						<div className='flex space-x-6 mt-4 md:mt-0'>
-							<a
-								href='#'
-								className='hover:text-white transition-colors duration-200'>
-								Privacy Policy
-							</a>
-							<a
-								href='#'
-								className='hover:text-white transition-colors duration-200'>
-								Terms of Service
-							</a>
+							All rights reserved.
 						</div>
 					</div>
 				</motion.div>

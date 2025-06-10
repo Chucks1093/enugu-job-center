@@ -1,40 +1,15 @@
 import React from "react";
 import { motion } from "framer-motion";
-import { Building2, GraduationCap, Smartphone, Landmark } from "lucide-react";
 
 const SponsorsPartnersSection: React.FC = () => {
 	const partners = [
 		{
 			name: "Enugu State Government",
-			icon: Building2,
+			icon: "/images/grayscale/skype-preview.png",
 		},
 		{
 			name: "University of Nigeria",
-			icon: GraduationCap,
-		},
-		{
-			name: "MTN Nigeria",
-			icon: Smartphone,
-		},
-		{
-			name: "Zenith Bank",
-			icon: Landmark,
-		},
-		{
-			name: "Enugu State Government",
-			icon: Building2,
-		},
-		{
-			name: "University of Nigeria",
-			icon: GraduationCap,
-		},
-		{
-			name: "MTN Nigeria",
-			icon: Smartphone,
-		},
-		{
-			name: "Zenith Bank",
-			icon: Landmark,
+			icon: "/images/grayscale/giz-preview.png",
 		},
 	];
 
@@ -74,9 +49,9 @@ const SponsorsPartnersSection: React.FC = () => {
 	};
 
 	return (
-		<section className=' text-gray-100 py-20 px-8 rounded-3xl mx-8 my-16'>
+		<section className=' text-gray-100  my-16'>
 			<motion.div
-				className='max-w-7xl mx-auto border bg-[#0f0c0b] border-gray-700 p-12 rounded-2xl'
+				className='max-w-6xl mx-auto border bg-black border-gray-700 py-12 px-2 md:px-12  md:rounded-2xl'
 				variants={containerVariants}
 				initial='hidden'
 				whileInView='visible'
@@ -99,32 +74,25 @@ const SponsorsPartnersSection: React.FC = () => {
 				</div>
 
 				{/* Partners Grid */}
-				<div
-					className='grid gap-8 justify-center'
-					style={{
-						gridTemplateColumns: "repeat(auto-fit, minmax(200px, 1fr))",
-					}}>
+				<div className='grid gap-8 justify-center grid-cols-2 md:grid-cols-[repeat(auto-fit,minmax(200px,1fr))]'>
 					{partners.map((partner, index) => {
 						return (
 							<motion.div
 								key={index}
 								variants={itemVariants}
-								whileHover={{
-									scale: 1.05,
-									y: -5,
-								}}
 								transition={{
 									duration: 0.3,
 									ease: "easeOut",
 								}}
 								className='group cursor-pointer'>
-								<div className='relative p-6 rounded-xl border border-gray-700 hover:border-gray-500 transition-all duration-300 bg-gray-800/30 hover:bg-gray-700/60 backdrop-blur-sm'>
+								<div className='relative p-2 rounded-xl transition-all duration-300 '>
 									{/* Partner Icon */}
-									<div className='text-center mb-4'>
-										<div className='flex justify-center mb-3'>
+									<div className='text-center  min-h-[5rem] flex-col flex justify-center '>
+										<div className='flex justify-center items-center mb-3'>
 											<img
-												src='/icons/skype.jpg'
-												className='h-8 text-gray-400 group-hover:text-green-400 transition-colors duration-300'
+												src={partner.icon}
+												// src='/logo-white.svg'
+												className='w-[7.5rem] text-gray-400 group-hover:text-blue-400 transition-colors duration-300 logo-white'
 											/>
 										</div>
 										<div className='text-xs text-gray-400 group-hover:text-gray-200 transition-colors duration-300'>
@@ -133,7 +101,7 @@ const SponsorsPartnersSection: React.FC = () => {
 									</div>
 
 									{/* Hover Glow Effect */}
-									<motion.div className='absolute inset-0 bg-gradient-to-br from-green-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl' />
+									<motion.div className='absolute inset-0 bg-gradient-to-br from-gray-500/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 rounded-xl' />
 								</div>
 							</motion.div>
 						);

@@ -4,7 +4,6 @@ import Misson from "@/components/Misson";
 import CTASection from "@/components/CTASection";
 import Footer from "@/components/Footer";
 import MovingBanner from "@/components/common/MovingBanner";
-import SponsorsPartnersSection from "@/components/Sponsors";
 
 import FeatureSection from "@/components/FeatureSection";
 
@@ -13,14 +12,12 @@ function LandingPage() {
 		<div>
 			<Header />
 			<Hero />
-			{/* 
-			<Misson />
 
-			<SponsorsPartnersSection />
+			<Misson />
 			<FeatureSection />
 			<CTASection />
 			<MovingBanner />
-			<Footer /> */}
+			<Footer />
 		</div>
 	);
 }
