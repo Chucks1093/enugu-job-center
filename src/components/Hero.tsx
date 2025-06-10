@@ -40,7 +40,7 @@ function Hero() {
 			/>
 			<div className='md:h-screen flex items-center justify-between mx-auto w-[90%] md:w-[80%] flex-col-reverse md:flex-row'>
 				<div className='w-full mt-4 md:mt-4'>
-					<div className='border opacity-[.75]  border-app-primary text-app-primary rounded-[1rem] w-fit px-3 py-1 text-[.7rem] md:text-sm mb-2 md:mb-4 hidden md:flex justify-center items-center gap-2'>
+					<div className='border opacity-[.75]  border-app-primary text-app-primary rounded-[1rem] w-fit px-3 py-1 text-[.7rem] md:text-sm mb-2 md:mb-4 hidden md:flex justify-center items-center gap-2 ms:text-[.71rem]'>
 						<motion.div
 							animate={{ rotate: 360 }}
 							transition={{
@@ -49,7 +49,7 @@ function Hero() {
 								ease: "linear",
 							}}>
 							<Dot
-								size={17}
+								size={16}
 								startColor='#03255d'
 								endColor='#03255d'
 							/>
@@ -57,7 +57,7 @@ function Hero() {
 						<p>Smart career decisions</p>
 					</div>
 
-					<h1 className='text-2xl md:text-[3rem] leading-[2.2rem] md:leading-[4rem] text-app-primary md:font-semibold mb-3 mb:mb-4 font-manrope font-bold'>
+					<h1 className='text-2xl ms:leading-[3.3rem] ms:text-[2.5rem] md:text-[3rem] leading-[2.2rem] md:leading-[4rem] text-app-primary md:font-semibold mb-3 mb:mb-4 font-manrope font-bold'>
 						Transform Your{" "}
 						<span className='text-app-secondary italic'>Future</span>,
 						<br />

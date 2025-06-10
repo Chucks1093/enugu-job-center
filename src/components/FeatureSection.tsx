@@ -67,7 +67,7 @@ const FeatureCard: React.FC<FeatureCardProps> = (props) => {
 	};
 
 	return (
-		<section className='bg-white text-gray-900 py-8 sm:py-12 md:py-16 lg:py-20  rounded-2xl md:rounded-3xl my-8 md:my-12 lg:my-16 shadow-lg border border-gray-100 w-[90%] mx-auto px-6 md:px-0'>
+		<section className='bg-white text-gray-900 py-8 sm:py-12 md:py-16 lg:py-20  rounded-2xl md:rounded-3xl my-8 md:my-12 lg:my-16 shadow-lg border border-gray-100 ms:w-[95%] md:w-[90%] mx-auto px-6  ms:px-12'>
 			<motion.div
 				className='max-w-7xl mx-auto'
 				variants={containerVariants}
