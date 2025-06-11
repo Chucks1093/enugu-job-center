@@ -6,6 +6,7 @@ import Footer from "@/components/Footer";
 import MovingBanner from "@/components/common/MovingBanner";
 
 import FeatureSection from "@/components/FeatureSection";
+import PartnersSection from "@/components/PartnersSection";
 
 function LandingPage() {
 	return (
@@ -14,6 +15,7 @@ function LandingPage() {
 			<Hero />
 
 			<Misson />
+			<PartnersSection />
 			<FeatureSection />
 			<CTASection />
 			<MovingBanner />

@@ -107,13 +107,12 @@ const FeatureCard: React.FC<FeatureCardProps> = (props) => {
 									<motion.div
 										key={index}
 										variants={itemVariants}
-										className='flex items-center space-x-2 p-2 rounded-xl border border-gray-200 hover:border-gray-400 hover:bg-gray-50 transition-all duration-300 group cursor-pointer'
-										whileHover={{ scale: 1.02 }}>
+										className='flex items-center space-x-2 p-2 rounded-xl border border-gray-100 hover:border-gray-200 hover:bg-gray-50 transition-all duration-300 group cursor-pointer'>
 										<div className='flex items-center justify-center w-9 h-9 bg-blue-500/10 rounded-lg group-hover:bg-blue-500/20 transition-colors duration-300'>
 											<IconComponent className='w-5 h-5 text-blue-600' />
 										</div>
 										<div className='flex-1'>
-											<h3 className='text-gray-500 group-hover:text-gray-900 font-medium text-md transition-colors duration-300'>
+											<h3 className='text-gray-500  font-medium text-md transition-colors duration-300'>
 												{step.text}
 											</h3>
 										</div>
