@@ -162,7 +162,7 @@ const CTASection: React.FC = () => {
 						className='flex items-center gap-4 mt-4 mb:mt-8 mb-8 md:mb-0  justify-center '>
 						<a href={JOB_LINK}>
 							<button className='flex items-center bg-app-primary text-zinc-100 text-sm md:text-lg p-1 pl-5 mb:pl-6 rounded-[3.6rem] gap-4 font-semibold font-montserrat '>
-								Get Started
+								View Listing
 								<div className='flex items-center justify-center bg-app-secondary p-2 rounded-full w-9 h-9 md:w-11 md:h-11'>
 									<MousePointer2
 										className='rotate-90'

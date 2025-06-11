@@ -32,6 +32,10 @@ const PartnersSection: React.FC = () => {
 			name: "Sme",
 			icon: "/logo-blue.png",
 		},
+		{
+			name: "vertix",
+			icon: "/icons/vantix.png",
+		},
 	];
 
 	const headerVariants = {

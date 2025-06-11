@@ -54,11 +54,11 @@ function Header() {
 				<div className='flex items-center gap-4'>
 					{/* Apply Button - Hidden on very small screens */}
 					<Link
-						to='/loan'
+						to={JOB_LINK}
 						className='hidden sm:block'>
 						<button className='flex items-center bg-app-primary text-zinc-100 text-xs sm:text-sm p-1 pl-3 sm:pl-4 rounded-[3.6rem] gap-2 sm:gap-3 font-semibold font-montserrat hover:bg-opacity-90 transition-all'>
-							<span className='hidden sm:inline'>Apply now</span>
-							<span className='sm:hidden'>Apply</span>
+							<span className='hidden sm:inline'>View Listing</span>
+							<span className='sm:hidden'>View Listing</span>
 							<div className='flex items-center justify-center bg-app-secondary p-1.5 sm:p-2 rounded-full w-7 h-7 sm:w-9 sm:h-9'>
 								<MousePointer2
 									className='rotate-90 w-3 h-3 sm:w-4 sm:h-4'
@@ -123,7 +123,7 @@ function Header() {
 						onClick={closeMobileMenu}
 						className='sm:hidden pt-4'>
 						<button className='w-full flex items-center justify-center bg-app-primary text-zinc-100 text-sm p-3 rounded-lg gap-3 font-semibold font-montserrat'>
-							Apply Now
+							View Listing
 							<MousePointer2
 								className='rotate-90 w-4 h-4'
 								fill='white'
