@@ -31,7 +31,7 @@ function Hero() {
 
 	return (
 		<section
-			className='md:pt-0 pt-[12vh] relative .bg-[#fff5c238]'
+			className='md:pt-0 pt-[12vh] relative .bg-[#fff5c238] '
 			id='hero'>
 			<img
 				src='https://framerusercontent.com/images/5RlXjISAoh2vfp5MeLPNxQZkTE.svg'

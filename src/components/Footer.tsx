@@ -8,16 +8,19 @@ const Footer: React.FC = () => {
 			links: [
 				{
 					label: "LinkedIn",
-					url: "https://www.linkedin.com/company/enugu-state-sme-agency",
-				},
-				{ label: "Instagram", url: "https://instagram.com/enugusmeagency" },
-				{
-					label: "LinkedIn",
-					url: "https://www.linkedin.com/company/enugu-state-sme-agency",
+					url: "https://tr.ee/rPVpM7bsPu",
 				},
 				{
-					label: "Whatsapp",
-					url: "https://chat.whatsapp.com/BfR2fEkCFzsD4HiULT9fFt",
+					label: "Instagram",
+					url: "https://www.instagram.com/enugujobscenter?igsh=MXE1ODloc3dteWw5Ng==",
+				},
+				{
+					label: "Facebook",
+					url: "https://tr.ee/paBDZ9U7mR",
+				},
+				{
+					label: "TikTok",
+					url: "https://tr.ee/x8Ui84UaGd",
 				},
 			],
 		},
@@ -114,7 +117,7 @@ const Footer: React.FC = () => {
 					animate={{ opacity: 1 }}
 					transition={{ duration: 0.6, delay: 0.8 }}>
 					<div className='flex flex-col md:flex-row justify-between items-center text-sm text-gray-300'>
-						<p>&copy; 2024 Onboard. </p>
+						<p>&copy; {new Date().getFullYear()} Onboard. </p>
 						<div className='flex space-x-6 mt-4 md:mt-0'>
 							All rights reserved.
 						</div>

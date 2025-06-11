@@ -16,6 +16,7 @@ import {
 	Calendar,
 	UserCheck,
 } from "lucide-react";
+
 import FeatureItem from "./common/FeatureItem";
 
 type FeatureCardProps = {
@@ -65,9 +66,9 @@ const FeatureCard: React.FC<FeatureCardProps> = (props) => {
 	};
 
 	return (
-		<section className='bg-white text-gray-900 py-8 sm:py-12 md:py-16 lg:py-20  rounded-2xl md:rounded-3xl my-8 md:my-12 lg:my-16 shadow-lg border border-gray-100 ms:w-[95%] md:w-[90%] mx-auto px-6  ms:px-12'>
+		<section className='bg-white text-gray-900 py-8 sm:py-12 md:py-16 lg:py-20  rounded-2xl md:rounded-3xl my-8 md:my-12 lg:my-16 shadow-lg border border-gray-100 ms:w-[95%] md:w-[90%] mx-auto px-6  ms:px-12 max-w-7xl'>
 			<motion.div
-				className='max-w-7xl mx-auto'
+				className='l mx-auto'
 				variants={containerVariants}
 				initial='hidden'
 				whileInView='visible'
@@ -209,9 +210,9 @@ const FeatureSection = () => {
 				title='Unlock Your Potential'
 				tag='CAREER COUNSELING'
 				description='Book your on-site career counseling session today and get the guidance you need:'
-				image='/images/compressed/image-2.jpg'
+				image='/images/compressed/image-8.jpg'
 				buttonText='Book Counseling Session'
-				buttonLink='https://qrco.de/CAREERCOUNSELINGCONSENTFORM'>
+				buttonLink='https://tinyurl.com/CAREERCOUNSELINGCONSENTFORM'>
 				<FeatureItem
 					icon={Users}
 					title='Career Guidance'
@@ -246,7 +247,7 @@ const FeatureSection = () => {
 				description='Submit your CV for job matching and find your perfect career opportunity:'
 				image='/images/compressed/image-5.jpg'
 				buttonText='Submit Your CV'
-				buttonLink='https://qrco.de/jobseekerprofileform'>
+				buttonLink='https://tinyurl.com/JOBSEEKERPROFILEFORM'>
 				<FeatureItem
 					icon={Briefcase}
 					title='CV Optimization'
