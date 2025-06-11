@@ -19,10 +19,6 @@ const PartnersSection: React.FC = () => {
 			name: "Giz",
 			icon: "/icons/giz.png",
 		},
-		{
-			name: "Sme",
-			icon: "/icons/edu-job.png",
-		},
 
 		{
 			name: "Skype",
