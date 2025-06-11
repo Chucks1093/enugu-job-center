@@ -19,10 +19,6 @@ const CTASection: React.FC = () => {
 			url: "/images/compressed/image-3.jpg",
 			style: "top-[35%] right-[80%]",
 		},
-		{
-			url: "/images/compressed/image-4.jpg",
-			style: "top-[60%] right-[40%]",
-		},
 	];
 
 	const rightImages = [
@@ -91,7 +87,7 @@ const CTASection: React.FC = () => {
 							key={`left-${index}`}
 							variants={imageVariants}
 							className={cn(
-								"hidden md:block w-32 h-w-32 rounded-full overflow-hidden absolute -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow-lg",
+								"hidden md:block w-28 h-28 rounded-full overflow-hidden absolute -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow-lg",
 								image.style
 							)}
 							transition={{ duration: 0.3 }}>
@@ -111,7 +107,7 @@ const CTASection: React.FC = () => {
 							key={`left-${index}`}
 							variants={imageVariants}
 							className={cn(
-								"hidden md:block w-32 h-w-32 rounded-full overflow-hidden absolute -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow-lg",
+								"hidden md:block w-28 h-28 rounded-full overflow-hidden absolute -translate-x-1/2 -translate-y-1/2 border-4 border-white shadow-lg",
 								image.style
 							)}
 							transition={{ duration: 0.3 }}>
