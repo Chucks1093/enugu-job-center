@@ -51,7 +51,12 @@ const PartnersSection: React.FC = () => {
 	};
 
 	// Duplicate partners array for seamless loop
-	const duplicatedPartners = [...partners, ...partners];
+	const duplicatedPartners = [
+		...partners,
+		...partners,
+		...partners,
+		...partners,
+	];
 
 	return (
 		<section className='text-gray-100 my-16'>
@@ -83,7 +88,7 @@ const PartnersSection: React.FC = () => {
 						{duplicatedPartners.map((partner, index) => (
 							<div
 								key={index}
-								className='flex-shrink-0 mx-8 group cursor-pointer'>
+								className='flex-shrink-0 mx-2 md:mx-7 group cursor-pointer'>
 								<div className='relative p-4 rounded-xl transition-all duration-300'>
 									{/* Partner Icon */}
 									<div className='text-center min-h-[5rem] flex flex-col justify-center items-center'>
@@ -91,7 +96,7 @@ const PartnersSection: React.FC = () => {
 											<img
 												src={partner.icon}
 												alt={partner.name}
-												className='w-[8rem] h-[6rem] object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0'
+												className='w-20 h-16 md:w-[8rem] md:h-[6rem] object-contain opacity-60 group-hover:opacity-100 transition-opacity duration-300 filter grayscale group-hover:grayscale-0'
 											/>
 										</div>
 									</div>
